@@ -7,11 +7,11 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
-	<script>
+	<!-- <script>
 		function myFunction() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -20,30 +20,38 @@
     x.style.display = "block";
   }
 }
-	</script>
-	<title>Title</title>
+	</script> -->
+
+	<title>Robin Westerback Full Stack Web Developer</title>
 </head>
 
 <body>
 	<header>
 		<!-- Top Navigation Menu -->
 		<div class="nav-header">
-			<a href="#section-home" class="active logo">robin westerback</a>
+			<a href="#section-home" class="logo">robin westerback</a>
 			<!-- Navigation links (hidden by default) -->
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="#section-about">about</a></li>
+				<li><a href="#section-projects">projects</a></li>
+				<li><a href="#section-contact">contact</a></li>
+			</ul>
+            <!--
 			<div id="myLinks">
 				<a href="#section-about">about</a>
-				<a href="##section-projects">projects</a>
-				<a href="##section-contact">contact</a>
-			</div>
-			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				<a href="#section-projects">projects</a>
+				<a href="#section-contact">contact</a>
+			</div> --> 
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links 
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
-			</a>
+			</a> -->
 		</div>
 	</header>
-	<section id="section-home" class="section-home">
-		This is the home section!
-		<h1>This is a h1</h1>
+	<section id="section-home" class="bg-color">
+		<h1>WORLD CLASS SOLUTIONS COUNTER WORLD CLASS PROBLEMS</h1>
 	</section>
 	<section id="section-about" class="section-about">
 		This is the about section!
