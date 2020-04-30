@@ -7,25 +7,39 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+	<script>
+		function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+	</script>
 	<title>Title</title>
 </head>
 
 <body>
 	<header>
-		This is a header!
-		<a href="#section-home" class="logo">This is a logo</a>
-		<ul id="nav-header">
-			<li>
-				<a href="#section-about">About</a>
-			</li>
-			<li>
-				<a href="#section-projects">Projects</a>
-			</li>
-			<li>
-				<a href="#section-contact">Contact</a>
-			</li>
-		</ul>
+		<!-- Top Navigation Menu -->
+		<div class="nav-header">
+			<a href="#section-home" class="active logo">robin westerback</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="#section-about">about</a>
+				<a href="##section-projects">projects</a>
+				<a href="##section-contact">contact</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
 	</header>
 	<section id="section-home" class="section-home">
 		This is the home section!
@@ -93,7 +107,7 @@
 					<a href="#section-contact">Contact</a>
 				</li>
 			</ul>
-            <ul id="contact-footer">
+			<ul id="contact-footer">
 				<li>
 					<a href="" target="blank">Location</a>
 				</li>
@@ -104,7 +118,7 @@
 					<a href="" target="blank">Email</a>
 				</li>
 			</ul>
-            <ul id="social-footer">
+			<ul id="social-footer">
 				<li>
 					<a href="">LinkedIn</a>
 				</li>
@@ -115,8 +129,8 @@
 					<a href="" target="blank">Resume</a>
 				</li>
 			</ul>
-            <p>Copyright</p>
-            <a href="">Privacy Policy</a>
+			<p>Copyright</p>
+			<a href="">Privacy Policy</a>
 		</footer>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
