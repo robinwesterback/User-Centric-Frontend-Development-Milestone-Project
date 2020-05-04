@@ -358,6 +358,8 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     height: auto;
 }
 
+/* ----------------------------------------------------------Projects Section */
+
 .project1 {
     width: 75%;
     height: auto;
