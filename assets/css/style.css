@@ -128,7 +128,7 @@ table {
   border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@500&display=swap');
 
 /* ----------------------------------------------------------Colors */
 
@@ -137,21 +137,76 @@ table {
 }
 
 .text-color {
-  color: #040404;
+  color: #1D1D1D;
 }
 
 
 /* ----------------------------------------------------------Special paddings/margins/text */
 
 h1 {
+    position: absolute;
+    left: 10.39%;
+    right: -133.33%;
+    top: 35.16%;
+    bottom: 35.16%;
+
     font-family: 'Playfair Display', sans-serif;
-    font-size: 36px;
+    font-style: normal;
     font-weight: bold;
-    padding: 200px 50px;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+h3 {
+    position: absolute;
+    width: 263.6px;
+    height: 118.42px;
+    left: 35px;
+    top: 241px;
+
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 a {
-    color: #040404
+    color: #1D1D1D
+}
+
+/* ----------------------------------------------------------Classes */
+
+.number {
+    position: absolute;
+    width: 56px;
+    height: 64px;
+    left: 39px;
+    top: 145px;
+
+    font-size: 48px;
+    line-height: 64px;
+    /* identical to box height */
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    width: 60px;
+    height: 24px;
+    left: 97px;
+    top: 151px;
+
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
 }
 
 /* ----------------------------------------------------------Header */
@@ -186,12 +241,23 @@ header li a:hover {
 }
 
 header .logo {
-  display: block;
+    position: absolute;
+width: 251px;
+height: 58px;
+left: 26px;
+top: 26px;
+
+font-family: Playfair Display;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+/*  display: block;
   float: left;
   font-family: 'Playfair Display', sans-serif;
   font-size: 18px;
   padding: 20px 20px;
-  text-decoration: none;
+  text-decoration: none; */
 }
 
 header .menu {
