@@ -128,7 +128,7 @@ table {
   border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@500&display=swap');
 
 /* ----------------------------------------------------------Colors */
 
@@ -144,13 +144,9 @@ table {
 /* ----------------------------------------------------------Special paddings/margins/text */
 
 h1 {
-    position: absolute;
-    left: 10.39%;
-    right: -133.33%;
-    top: 35.16%;
-    bottom: 35.16%;
+    padding: 200px 50px;
 
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display SC', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -164,13 +160,7 @@ h2 {
 }
 
 h3 {
-    position: absolute;
-    width: 263.6px;
-    height: 118.42px;
-    left: 35px;
-    top: 241px;
-
-    font-family: Playfair Display;
+    font-family: 'Playfair Display SC', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -184,11 +174,8 @@ a {
 /* ----------------------------------------------------------Classes */
 
 .number {
-    position: absolute;
     width: 56px;
     height: 64px;
-    left: 39px;
-    top: 145px;
 
     font-size: 48px;
     line-height: 64px;
@@ -197,16 +184,17 @@ a {
 }
 
 .title {
-    position: absolute;
     width: 60px;
     height: 24px;
-    left: 97px;
-    top: 151px;
 
     font-size: 18px;
     line-height: 24px;
     /* identical to box height */
     text-align: center;
+}
+
+.heading {
+    display: flex;
 }
 
 /* ----------------------------------------------------------Header */
@@ -241,20 +229,19 @@ header li a:hover {
 }
 
 header .logo {
-    position: absolute;
-width: 251px;
-height: 58px;
-left: 26px;
-top: 26px;
+    display: block;
+    float: left;
 
-font-family: Playfair Display;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 24px;
+    font-family: 'Playfair Display SC' sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 20px;
+    text-decoration: none;
 /*  display: block;
   float: left;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: 'Playfair Display SC', sans-serif;
   font-size: 18px;
   padding: 20px 20px;
   text-decoration: none; */
@@ -363,3 +350,62 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 /* Add a grey background color on mouse-over */
 /*.nav-header a:hover {
 } 
+
+/* ----------------------------------------------------------About Section */
+
+.about-img {
+    width: 80%;
+    height: auto;
+}
+
+.project1 {
+    width: 75%;
+    height: auto;
+}
+
+.project1-title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 75%;
+    height: auto;
+}
+
+.project2 {
+    width: 75%;
+    height: auto;
+}
+
+.project2-title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 75%;
+    height: auto;
+}
+
+.project3 {
+    width: 75%;
+    height: auto;
+}
+
+.project3-title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 75%;
+    height: auto;
+}
+
+.showreel {
+    width: 75%;
+    height: auto;
+}
+
+.showreel-title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 75%;
+    height: auto;
+}
