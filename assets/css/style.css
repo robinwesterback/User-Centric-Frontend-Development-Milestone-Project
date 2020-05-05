@@ -167,6 +167,14 @@ h3 {
     line-height: 32px;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1D1D1D;
+}
+
 a {
     color: #1D1D1D
 }
@@ -483,4 +491,34 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+
+/*-----------------------------------------------------------Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footer > ul {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 11px;
+
+    color: #1D1D1D;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 8px;
+
+    color: #828282;
 }
