@@ -64,6 +64,16 @@ a {
   text-align: center;
 }
 
+.number:after {
+  content: "";
+  display: block;
+  margin-top: -0.2rem;
+  height: 1px;
+  width: 31px;
+  background: #1d1d1d;
+}
+
+
 .title {
   width: 60px;
   height: 24px;
@@ -142,7 +152,7 @@ header .logo {
 .section-projects .project.p-0 { padding: 0; }
 .section-projects .project.p-2 { padding: 0 3rem; }
 
-.section-projects .project .img {
+.section-projects .project img {
   max-width: 100%;
   width: 100%;
 }
