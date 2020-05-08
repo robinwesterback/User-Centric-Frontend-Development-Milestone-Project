@@ -73,7 +73,6 @@ a {
   background: #1d1d1d;
 }
 
-
 .title {
   width: 60px;
   height: 24px;
@@ -93,11 +92,13 @@ a {
 /* ----------------------------------------------------------Header */
 
 header {
-  background-color: rgba(229, 229, 229, 1);
+  background-color: rgba(229, 229, 229);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0);
   position: fixed;
   width: 100vw;
   z-index: 3;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .logo {
@@ -125,7 +126,7 @@ header .logo {
   margin-top: 1.2rem;
   height: 2px;
   width: 70px;
-  background: ;
+  background: #1d1d1d;
 }
 
 /* ----------------------------------------------------------About Section */
@@ -147,10 +148,16 @@ header .logo {
   padding: 0 2rem;
 }
 
-.section-projects .project:last-child { margin-bottom: 0; }
+.section-projects .project:last-child {
+  margin-bottom: 0;
+}
 
-.section-projects .project.p-0 { padding: 0; }
-.section-projects .project.p-2 { padding: 0 3rem; }
+.section-projects .project.p-0 {
+  padding: 0;
+}
+.section-projects .project.p-2 {
+  padding: 0 3rem;
+}
 
 .section-projects .project img {
   max-width: 100%;
@@ -158,9 +165,9 @@ header .logo {
 }
 
 .project-title {
-    margin-top: 0.85rem;
-    padding-bottom: 0.5rem;
-    font-weight: bold;
+  margin-top: 0.85rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #1d1d1d;
@@ -168,10 +175,54 @@ header .logo {
 
 /* ----------------------------------------------------------Contact Section */
 
+.section-contact {
+}
+
 .contact-form {
-  background: url(assets/images/contact.jpg);
-  width: 75%;
-  height: auto;
+  background-image: url("assets/images/contact.jpg");
+
+  min-height: 380px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form {
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 /*-----------------------------------------------------------Footer */
