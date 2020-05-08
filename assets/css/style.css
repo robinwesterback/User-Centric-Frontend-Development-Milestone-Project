@@ -1,524 +1,189 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 /* ----------------------------------------------------------Colors */
 
 .bg-color {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .text-color {
-  color: #1D1D1D;
+  color: #1d1d1d;
 }
-
 
 /* ----------------------------------------------------------Special paddings/margins/text */
 
-h1 {
-    padding: 200px 50px;
+body {
+  background-color: #e5e5e5;
+  color: #1d1d1d;
+  font-family: "Playfair Display";
+  font-size: 14px;
+}
 
-    font-family: 'Playfair Display SC', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
+  font-family: "Roboto";
 }
 
 h3 {
-    font-family: 'Playfair Display SC', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 32px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #1D1D1D;
+  font-family: "Roboto";
+  line-height: 16px;
 }
 
 a {
-    color: #1D1D1D
+  color: #1d1d1d;
 }
 
 /* ----------------------------------------------------------Classes */
 
-.number {
-    width: 56px;
-    height: 64px;
+.container {
+  margin: 0 auto;
+  padding: 0 2.857rem;
+}
 
-    font-size: 48px;
-    line-height: 64px;
-    /* identical to box height */
-    text-align: center;
+.section-margin-t {
+  margin-top: 150px;
+}
+
+.number {
+  width: 56px;
+  height: 64px;
+
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
 }
 
 .title {
-    width: 60px;
-    height: 24px;
+  width: 60px;
+  height: 24px;
 
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height */
-    text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+
+  padding-top: 8px;
 }
 
 .heading {
-    display: flex;
+  display: flex;
+  margin-bottom: 2.286rem;
 }
 
 /* ----------------------------------------------------------Header */
 
 header {
-  background-color: rgba(229,229,229,1);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0);
+  background-color: rgba(229, 229, 229, 1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 3;
 }
 
-header ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: rgba(229,229,229,1);
-}
-
-header li a {
-  display: flex;
-  justify-content: flex-end;
-  font-weight: bold;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-header li a:hover {
-  background-color: #f4f4f4;
-}
-
 header .logo {
-    display: block;
-    float: left;
-
-    font-family: 'Playfair Display SC' sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 20px 20px;
-    text-decoration: none;
-/*  display: block;
+  display: block;
   float: left;
-  font-family: 'Playfair Display SC', sans-serif;
+
+  font-family: "Playfair Display SC" sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 24px;
   padding: 20px 20px;
-  text-decoration: none; */
-}
-
-header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-header .menu-icon .navicon:before,
-header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-header .menu-icon .navicon:before {
-  top: 5px;
-}
-
-header .menu-icon .navicon:after {
-  top: -5px;
-}
-
-header .menu-btn {
-  display: none;
-}
-
-header .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* ----------------------------------------------------------Nav header */
-
-
-/* Style the navigation menu */
-/*.nav-header {
-  overflow: hidden;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-/*.nav-header #myLinks {
-  font-weight: bold;
-  display: none;
-}
-
-/* Style navigation menu links */
-/*.nav-header a {
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
 }
 
-/* Style the hamburger menu */
-/*.nav-header a.icon {
-  color: #040404;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+/* ----------------------------------------------------------Home Section */
+
+.section-home {
+  padding-top: 250px;
 }
 
-/* Add a grey background color on mouse-over */
-/*.nav-header a:hover {
-} 
+.section-home h1:after {
+  content: "";
+  display: block;
+  margin-top: 1.2rem;
+  height: 2px;
+  width: 70px;
+  background: ;
+}
 
 /* ----------------------------------------------------------About Section */
 
+.section-about h3 {
+  max-width: 70%;
+  margin-bottom: 1rem;
+}
+
 .about-img {
-    width: 80%;
-    height: auto;
+  margin-top: 2.5rem;
+  max-width: 100%;
 }
 
 /* ----------------------------------------------------------Projects Section */
 
-.project1 {
-    width: 75%;
-    height: auto;
+.section-projects .project {
+  margin-bottom: 50px;
+  padding: 0 2rem;
 }
 
-.project1-title {
-    display: flex;
-    justify-content: space-between;
+.section-projects .project:last-child { margin-bottom: 0; }
 
-    width: 75%;
-    height: auto;
+.section-projects .project.p-0 { padding: 0; }
+.section-projects .project.p-2 { padding: 0 3rem; }
+
+.section-projects .project .img {
+  max-width: 100%;
+  width: 100%;
 }
 
-.project2 {
-    width: 75%;
-    height: auto;
-}
-
-.project2-title {
-    display: flex;
-    justify-content: space-between;
-
-    width: 75%;
-    height: auto;
-}
-
-.project3 {
-    width: 75%;
-    height: auto;
-}
-
-.project3-title {
-    display: flex;
-    justify-content: space-between;
-
-    width: 75%;
-    height: auto;
-}
-
-.showreel {
-    width: 75%;
-    height: auto;
-}
-
-.showreel-title {
-    display: flex;
-    justify-content: space-between;
-
-    width: 75%;
-    height: auto;
+.project-title {
+    margin-top: 0.85rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #1d1d1d;
 }
 
 /* ----------------------------------------------------------Contact Section */
 
 .contact-form {
-    background: url(assets/images/contact.jpg);
-    width: 75%;
-    height: auto;
-}
-
-/*-----------------------------------------------------------Form w3schools.com */
-
-/* Style inputs, select elements and textareas */
-input[type=text], select, textarea{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-/* Style the label to display next to the inputs */
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-/* Style the submit button */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-/* Floating column for labels: 25% width */
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-/* Floating column for inputs: 75% width */
-.col-75 {
-  float: left;
+  background: url(assets/images/contact.jpg);
   width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+  height: auto;
 }
 
 /*-----------------------------------------------------------Footer */
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 div.footer > ul {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 8px;
-    line-height: 11px;
-
-    color: #1D1D1D;
+  font-family: "Roboto";
+  font-size: 8px;
+  line-height: 11px;
 }
 
 .copyright {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 6px;
-    line-height: 8px;
+  font-family: "Roboto";
+  font-size: 6px;
+  line-height: 8px;
 
-    color: #828282;
+  color: #828282;
 }
