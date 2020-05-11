@@ -48,7 +48,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 2.857rem;
+  padding: 0 1.5rem;
 }
 
 .section-margin-t {
@@ -181,15 +181,12 @@ header .logo {
 /* ----------------------------------------------------------Contact Section */
 
 .section-contact {
-}
 
-.section-contact .container {
-  padding: none;
 }
 
 .section-contact .heading {
   margin-bottom: 1.75rem;
-  padding: 0 2.857rem;
+  padding: 0 1.5rem;
 }
 
 .contact-form {
@@ -222,11 +219,6 @@ header .logo {
   justify-content: center;
 }
 
-.form :last-child {
-  display: flex;
-  justify-content: flex-end;
-}
-
 input[name="name"],
 input[name="email"],
 textarea[name="message"] {
@@ -247,7 +239,7 @@ input[name="name"] {
 }
 
 textarea[name="message"] {
-  width: 80%;
+  width: 90%;
   height: 30%;
   resize: none;
 }
@@ -259,6 +251,9 @@ input[name="password"]:focus textarea[name="message"]:focus {
 }
 
 .btn {
+  float: right;
+  margin-right: 8px;
+
   background-color: #eb486f;
   color: white;
   font-family: "Roboto";
@@ -298,26 +293,26 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   padding: 25px 20px 20px 20px;
   border-top: 1px solid #040404;
-  height: 140px;
+  height: 60px;
 }
 
-div.footer > ul {
+.list-item {
   font-family: "Roboto";
-  font-size: 8px;
-  line-height: 11px;
-  text-decoration: none;
+  font-size: 10px;
+  line-height: 14px;
+  margin-bottom: 8px;
 }
 
 .copyright {
   display: flex;
   justify-content: space-between;
 
-  padding: 20px 20px 30px 20px;
+  padding: 20px;
+}
 
+.copyright a {
   font-family: "Roboto";
-  font-size: 6px;
-  line-height: 8px;
-  text-decoration: none;
-
+  font-size: 8px;
+  line-height: 11px;
   color: #828282;
 }
