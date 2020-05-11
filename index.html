@@ -106,23 +106,30 @@
 
       <div class="contact-form">
         <form action="/action_page.php" class="form">
-          <h1>Login</h1>
+          <h3>Drop me a message</h3>
 
           <input 
           type="text" 
-          placeholder="Enter Email" 
-          name="email" 
+          placeholder="Name" 
+          name="name" 
           required 
           />
 
           <input
-            type="password"
-            placeholder="Enter Password"
-            name="psw"
+            type="email"
+            placeholder="Email address"
+            name="email"
             required
           />
 
-          <button type="submit" class="btn">Login</button>
+          <textarea 
+            name="message" 
+            placeholder="Describe your request" 
+            required
+            >
+          </textarea>
+
+          <button type="submit" class="btn">send</button>
         </form>
       </div>
     </section>
