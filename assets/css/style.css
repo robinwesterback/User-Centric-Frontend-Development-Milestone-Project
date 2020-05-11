@@ -223,17 +223,17 @@ header .logo {
 }
 
 .form :last-child {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 input[name="name"],
 input[name="email"],
 textarea[name="message"] {
-    font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   line-height: 14px;
-  color:#1d1d1d;
+  color: #1d1d1d;
 
   width: 50%;
   padding: 10px;
@@ -243,7 +243,7 @@ textarea[name="message"] {
 }
 
 input[name="name"] {
-    margin-top: 22px;
+  margin-top: 22px;
 }
 
 textarea[name="message"] {
@@ -274,16 +274,19 @@ input[name="password"]:focus textarea[name="message"]:focus {
   opacity: 1;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #1d1d1d;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color:#1d1d1d;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #1d1d1d;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #1d1d1d;
 }
 
@@ -292,21 +295,29 @@ input[name="password"]:focus textarea[name="message"]:focus {
 .footer {
   display: flex;
   justify-content: space-between;
+
+  padding: 25px 20px 20px 20px;
+  border-top: 1px solid #040404;
+  height: 140px;
 }
 
 div.footer > ul {
   font-family: "Roboto";
   font-size: 8px;
   line-height: 11px;
+  text-decoration: none;
 }
 
 .copyright {
   display: flex;
   justify-content: space-between;
 
+  padding: 20px 20px 30px 20px;
+
   font-family: "Roboto";
   font-size: 6px;
   line-height: 8px;
+  text-decoration: none;
 
   color: #828282;
 }
