@@ -181,7 +181,6 @@ header .logo {
 /* ----------------------------------------------------------Contact Section */
 
 .section-contact {
-
 }
 
 .section-contact .heading {
@@ -315,4 +314,104 @@ input[name="password"]:focus textarea[name="message"]:focus {
   font-size: 8px;
   line-height: 11px;
   color: #828282;
+}
+
+/*-----------------------------------------------------------Media Queries */
+
+@media (min-width: 992px) {
+  header {
+    background-color: rgba(229, 229, 229);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+  }
+
+  .menu li {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .container {
+    padding: 0 15.625rem;
+  }
+
+  .section-home {
+    padding-top: 150px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 71px;
+    line-height: 95px;
+  }
+
+  .section-home h1:after {
+    content: "";
+    display: block;
+    margin-top: 1.2rem;
+    height: 2px;
+    width: 140px;
+    background: #1d1d1d;
+  }
+
+  .section-about {
+    display: flex;
+  }
+
+  .about-me {
+    max-width: 40%;
+    max-height: 40%;
+  }
+
+  .about-img {
+    margin-top: 2rem;
+    max-width: 40%;
+  }
+
+  .heading {
+    margin-bottom: 0.625rem;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-projects .heading {
+    margin-bottom: 2.813rem;
+  }
+
+  .section-projects .project {
+    margin-bottom: 50px;
+    padding: 0 0rem;
+    max-width: 40%;
+  }
+
+  .section-projects .project.p-0 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .section-contact {
+    margin: 0 auto;
+    padding: 0 15.625rem;
+  }
+
+  footer {
+    margin: 0 auto;
+    padding: 0 15.625rem;
+  }
 }
