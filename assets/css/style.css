@@ -52,7 +52,7 @@ a {
 }
 
 .section-margin-t {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .number {
@@ -330,10 +330,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .menu {
-    margin-left: 70px;
+    margin-left: 75px;
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 30%;
     justify-content: space-between;
   }
 
@@ -346,6 +346,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .container {
     padding: 0 15.625rem;
+  }
+
+  .section-margin-t {
+    margin-top: 250px;
   }
 
   .section-home {
@@ -369,9 +373,14 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .section-about {
     display: flex;
+    justify-content: space-between;
   }
 
   .about-me {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
     max-width: 40%;
     max-height: 40%;
   }
@@ -400,13 +409,25 @@ input[name="password"]:focus textarea[name="message"]:focus {
     max-width: 40%;
   }
 
+  .section-projects .project.p-1-p-3 {
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .section-projects .project.p-0 {
+    align-self: flex-end;
+
+    max-width: 100%;
+    width: 100%;
+  }
+
   .section-projects .project.p-0 {
     max-width: 100%;
     width: 100%;
   }
 
   .section-contact {
-    margin: 0 auto;
+    margin: 150px auto;
     padding: 0 15.625rem;
   }
 
