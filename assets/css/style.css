@@ -455,7 +455,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-contact {
-    margin: 150px auto;
     padding: 0 15%;
   }
 
@@ -479,7 +478,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-contact {
-    margin: 0px auto;
     width: 50%;
 
     display: flex;
