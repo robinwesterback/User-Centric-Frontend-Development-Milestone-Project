@@ -114,6 +114,24 @@ header .logo {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu a {
+      display: block;
+  }
+
+  header a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
 /* ----------------------------------------------------------Home Section */
 
 .section-home {
@@ -344,7 +362,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .menu {
-    margin-left: 75px;
+    margin-left: 7%;
     display: flex;
     align-items: center;
     width: 30%;
@@ -356,6 +374,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+  }
+
+  .icon {
+    display: none;
   }
 
   .container {
@@ -395,13 +417,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
     justify-content: flex-end;
     flex-direction: column;
 
-    max-width: 40%;
+    max-width: 45%;
     max-height: 40%;
   }
 
   .about-img {
     margin-top: 2rem;
-    max-width: 40%;
+    max-width: 45%;
   }
 
   .heading {
@@ -478,15 +500,11 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-contact {
-    width: 50%;
+    width: 70%;
 
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-  }
-
-  .btn {
-    margin-right: 6px;
   }
 
   .footer {
@@ -494,17 +512,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .copyright {
-      padding: 20px 0;
+    padding: 20px 0;
   }
 }
 
 @media (min-width: 950px) {
   .section-projects .project.p-0 {
     margin-top: -5%;
-  }
-
-  .btn {
-    margin-right: 12px;
   }
 }
 
@@ -516,19 +530,11 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .projects {
     height: 800px;
   }
-
-  .btn {
-    margin-right: 16px;
-  }
 }
 
 @media (min-width: 1400px) {
   .section-projects .project.p-0 {
     margin-top: 0;
-  }
-
-  .btn {
-    margin-right: 28px;
   }
 }
 
@@ -540,28 +546,16 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .form {
     height: 500px;
   }
-
-  .btn {
-    margin-right: 44px;
-  }
 }
 
 @media (min-width: 2400px) {
   .projects {
     height: 1200px;
   }
-
-  .btn {
-    margin-right: 60px;
-  }
 }
 
 @media (min-width: 2900px) {
   .projects {
     height: 1400px;
-  }
-
-  .btn {
-    margin-right: 80px;
   }
 }
