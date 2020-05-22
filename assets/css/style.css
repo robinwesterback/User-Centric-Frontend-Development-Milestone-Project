@@ -104,8 +104,9 @@ header {
 header .logo {
   display: block;
   float: left;
+  z-index: 2;
 
-  font-family: "Playfair Display SC" sans-serif;
+  font-family: "Playfair Display SC";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -115,20 +116,72 @@ header .logo {
 }
 
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+  header span {
+    display: flex;
+    width: 10%;
+    font-size: 18px;
+    align-items: center;
   }
 
-  .menu a {
-      display: block;
-  }
-
-  header a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
     top: 0;
+    background-color: rgba(85, 88, 115, 0.8);
+    backdrop-filter: blur(6px);
+    overflow-y: hidden;
+  }
+
+  .overlay-content {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 15%;
+    margin-top: 10%;
+    flex-flow: column;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover {
+    color: #1d1d1d;
+  }
+
+  .overlay-content a:hover,
+  .overlay-content a:active {
+    color: #1d1d1d;
+    text-decoration: underline;
+  }
+
+  .overlay .closebtn {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
@@ -374,6 +427,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
+  }
+
+  .mobile-menu {
+    visibility: hidden;
   }
 
   .icon {
