@@ -115,76 +115,6 @@ header .logo {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  header span {
-    display: flex;
-    width: 10%;
-    font-size: 18px;
-    align-items: center;
-  }
-
-  .overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: rgba(85, 88, 115, 0.8);
-    backdrop-filter: blur(6px);
-    overflow-y: hidden;
-  }
-
-  .overlay-content {
-    display: flex;
-    align-items: flex-end;
-    margin-right: 15%;
-    margin-top: 10%;
-    flex-flow: column;
-  }
-
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .overlay a:hover {
-    color: #1d1d1d;
-  }
-
-  .overlay-content a:hover,
-  .overlay-content a:active {
-    color: #1d1d1d;
-    text-decoration: underline;
-  }
-
-  .overlay .closebtn {
-    font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0.4rem;
-    margin-right: 0.7rem;
-  }
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
 /* ----------------------------------------------------------Home Section */
 
 .section-home {
@@ -252,9 +182,6 @@ header .logo {
 }
 
 /* ----------------------------------------------------------Contact Section */
-
-.section-contact {
-}
 
 .section-contact .heading {
   margin-bottom: 1.75rem;
@@ -391,6 +318,72 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 /*-----------------------------------------------------------Media Queries */
 
+@media (max-width: 950px) {
+  header span {
+    display: flex;
+    width: 10%;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(85, 88, 115, 0.8);
+    backdrop-filter: blur(6px);
+    overflow-y: hidden;
+  }
+
+  .overlay-content {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 15%;
+    margin-top: 10%;
+    flex-flow: column;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay-content a:hover,
+  .overlay-content a:active {
+    color: #1d1d1d;
+    text-decoration: underline;
+  }
+
+  .overlay .closebtn {
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 @media (min-width: 450px) {
   .section-projects .project.p-0 {
     margin-top: 25%;
@@ -404,37 +397,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
 }
 
 @media (min-width: 768px) {
-  header {
-    background-color: rgba(229, 229, 229);
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0);
-    position: fixed;
-    width: 100vw;
-    z-index: 3;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .menu {
-    margin-left: 7%;
-    display: flex;
-    align-items: center;
-    width: 30%;
-    justify-content: space-between;
-  }
-
-  .menu li {
-    font-family: "Roboto";
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .mobile-menu {
-    visibility: hidden;
-  }
-
-  .icon {
-    display: none;
+  header span {
+    justify-content: center;
   }
 
   .container {
@@ -446,7 +410,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-home {
-    padding-top: 150px;
+    padding-top: 270px;
   }
 
   h1 {
@@ -473,14 +437,12 @@ input[name="password"]:focus textarea[name="message"]:focus {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-
-    max-width: 45%;
-    max-height: 40%;
   }
 
   .about-img {
     margin-top: 2rem;
-    max-width: 45%;
+    max-width: 70%;
+    max-height: 400px;
   }
 
   .heading {
@@ -545,9 +507,36 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin: 0 auto;
     padding: 0 15%;
   }
+
+  .footer {
+    padding: 25px 0 20px 0;
+  }
+
+  .copyright {
+    padding: 20px 0;
+  }
 }
 
 @media (min-width: 800px) {
+  .section-about {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-me {
+    max-width: 45%;
+    max-height: 40%;
+    align-self: flex-end;
+  }
+
+  .about-img {
+    margin-top: 2rem;
+    max-width: 45%;
+    align-self: flex-end;
+  }
+
   .section-projects .project.p-0 {
     margin-top: -20%;
   }
@@ -563,17 +552,48 @@ input[name="password"]:focus textarea[name="message"]:focus {
     flex-flow: column;
     justify-content: space-between;
   }
-
-  .footer {
-    padding: 25px 0 20px 0;
-  }
-
-  .copyright {
-    padding: 20px 0;
-  }
 }
 
 @media (min-width: 950px) {
+  header span {
+    visibility: hidden;
+  }
+
+  .closebtn i {
+    visibility: hidden;
+  }
+
+  .overlay-content {
+    display: flex;
+  }
+
+  .overlay-content a {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    padding: 8px 20px;
+  }
+
+  .overlay-content a:hover::after {
+    content: "";
+    display: block;
+    margin-top: 1.2rem;
+    height: 2px;
+    width: 31px;
+    background: #1d1d1d;
+  }
+
+  .overlay-content a:active::after {
+    content: "";
+    display: block;
+    margin-top: 1.2rem;
+    height: 2px;
+    width: 31px;
+    background: #1d1d1d;
+  }
+
   .section-projects .project.p-0 {
     margin-top: -5%;
   }
@@ -593,6 +613,11 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .section-projects .project.p-0 {
     margin-top: 0;
   }
+
+  .overlay-content a {
+    padding: 8px 30px;
+    margin-left: 10%;
+  }
 }
 
 @media (min-width: 1850px) {
@@ -603,16 +628,30 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .form {
     height: 500px;
   }
+
+  .overlay-content a {
+    padding: 8px 50px;
+    margin-left: 25%;
+  }
 }
 
 @media (min-width: 2400px) {
   .projects {
     height: 1200px;
   }
+
+  .overlay-content a {
+    margin-left: 40%;
+  }
 }
 
 @media (min-width: 2900px) {
   .projects {
     height: 1400px;
+  }
+
+  .overlay-content a {
+    padding: 8px 60px;
+    margin-left: 50%;
   }
 }
