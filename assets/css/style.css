@@ -441,7 +441,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .about-img {
     margin-top: 2rem;
-    max-width: 70%;
+    max-width: 50%;
     max-height: 400px;
   }
 
@@ -502,6 +502,14 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .section-contact .heading {
     padding: 0;
   }
+
+  .form {
+  max-width: 450px;
+}
+
+  .btn {
+  margin-right: 23px;
+}
 
   footer {
     margin: 0 auto;
@@ -565,6 +573,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .overlay-content {
     display: flex;
+    position: fixed;
+    left: 10rem;
   }
 
   .overlay-content a {
@@ -579,7 +589,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .overlay-content a:hover::after {
     content: "";
     display: block;
-    margin-top: 1.2rem;
+    margin-top: 0.6rem;
     height: 2px;
     width: 31px;
     background: #1d1d1d;
@@ -588,7 +598,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .overlay-content a:active::after {
     content: "";
     display: block;
-    margin-top: 1.2rem;
+    margin-top: 0.6rem;
     height: 2px;
     width: 31px;
     background: #1d1d1d;
@@ -631,7 +641,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .overlay-content a {
     padding: 8px 50px;
-    margin-left: 25%;
   }
 }
 
@@ -640,8 +649,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
     height: 1200px;
   }
 
-  .overlay-content a {
-    margin-left: 40%;
+  .overlay-content {
+    left: 16rem;
   }
 }
 
@@ -650,8 +659,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     height: 1400px;
   }
 
-  .overlay-content a {
-    padding: 8px 60px;
-    margin-left: 50%;
+  .overlay-content {
+    left: 20rem;
   }
 }
