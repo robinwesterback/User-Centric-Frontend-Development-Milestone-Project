@@ -183,6 +183,11 @@ header .logo {
 
 /* ----------------------------------------------------------Contact Section */
 
+#section-contact {
+  display: flex;
+  flex-flow: column;
+}
+
 .section-contact .heading {
   margin-bottom: 1.75rem;
   padding: 0 1.5rem;
@@ -370,6 +375,11 @@ input[name="password"]:focus textarea[name="message"]:focus {
     justify-content: flex-end;
     margin-top: 0.4rem;
     margin-right: 0.7rem;
+  }
+
+  #section-contact h3 {
+    order: -1;
+    visibility: hidden;
   }
 }
 
@@ -619,6 +629,27 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .section-projects .project.p-0 {
     margin-top: -5%;
+  }
+
+  .section-contact .heading {
+    margin-bottom: 0;
+  }
+
+  .section-contact h3 {
+    width: 30%;
+    margin-bottom: 1.75rem;
+  }
+
+  .section-contact h3 i {
+    margin-left: 0.3rem;
+  }
+
+  .contact-form {
+    min-height: 600px;
+  }
+
+  .form {
+    height: 400px;
   }
 }
 
