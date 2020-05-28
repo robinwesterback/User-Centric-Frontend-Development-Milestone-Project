@@ -35,6 +35,11 @@ h3 {
   line-height: 32px;
 }
 
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
 p {
   font-family: "Roboto";
   line-height: 16px;
@@ -95,7 +100,7 @@ header {
   background-color: rgba(229, 229, 229);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
   display: flex;
   justify-content: space-between;
@@ -134,7 +139,7 @@ header .logo {
 /* ----------------------------------------------------------About Section */
 
 .section-about {
-  padding-top: 30px;
+  padding-top: 4rem;
 }
 
 .section-about h3 {
@@ -148,6 +153,10 @@ header .logo {
 }
 
 /* ----------------------------------------------------------Projects Section */
+
+.section-projects {
+  padding-top: 4rem;
+}
 
 .projects {
   display: flex;
@@ -207,18 +216,21 @@ header .logo {
 }
 
 .form {
+  display: flex;
+  flex-flow: column;
+
   margin: 20px;
-  max-width: 300px;
+  width: 80%;
   padding: 25px;
   background-color: #ffffff;
   height: 330px;
 }
 
-.form h3 {
+.form h4 {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
-  padding: 0.5rem;
+  margin-bottom: 1.75rem;
   display: flex;
   justify-content: center;
 }
@@ -231,11 +243,13 @@ textarea[name="message"] {
   line-height: 14px;
   color: #1d1d1d;
 
-  width: 50%;
+  width: 90%;
   padding: 10px;
-  margin: 0px 10px 18px 0;
+  margin: 0px 0px 18px 0;
   border: 1px solid #1d1d1d;
   background: #f1f1f1;
+
+  align-self: center;
 }
 
 input[name="name"] {
@@ -243,7 +257,6 @@ input[name="name"] {
 }
 
 textarea[name="message"] {
-  width: 90%;
   height: 30%;
   resize: none;
 }
@@ -255,8 +268,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
 }
 
 .btn {
-  float: right;
-  margin-right: 8px;
+  align-self: flex-end;
+  margin-right: 1.5%;
 
   background-color: #eb486f;
   color: white;
@@ -324,6 +337,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 /*-----------------------------------------------------------Media Queries */
 
 @media (max-width: 950px) {
+  p {
+    text-align: justify;
+  }
+
   header span {
     display: flex;
     width: 10%;
@@ -338,8 +355,9 @@ input[name="password"]:focus textarea[name="message"]:focus {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(85, 88, 115, 0.8);
+    background-color: rgba(85, 88, 115, 0.9);
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     overflow-y: hidden;
   }
 
@@ -412,7 +430,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .container {
-    padding: 0 15%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .section-margin-t {
@@ -518,7 +537,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .btn {
-    margin-right: 23px;
+    margin-right: 2.3%;
   }
 
   footer {
@@ -631,6 +650,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-top: -5%;
   }
 
+  #section-contact {
+    padding-top: 4rem;
+  }
+
   .section-contact .heading {
     margin-bottom: 0;
   }
@@ -640,7 +663,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-bottom: 1.75rem;
   }
 
-  .section-contact h3 i {
+  .section-contact h4 i {
     margin-left: 0.3rem;
   }
 
@@ -650,6 +673,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .form {
     height: 400px;
+  }
+
+  .form h4 {
+    margin-bottom: 1.75rem;
   }
 }
 
