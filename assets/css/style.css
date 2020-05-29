@@ -22,8 +22,8 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 48px;
+  line-height: 64px;
 }
 
 h2 {
@@ -31,8 +31,8 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 32px;
+  line-height: 42px;
 }
 
 h4 {
@@ -42,7 +42,8 @@ h4 {
 
 p {
   font-family: "Roboto";
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 a {
@@ -61,11 +62,8 @@ a {
 }
 
 .number {
-  width: 56px;
-  height: 64px;
-
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 64px;
+  line-height: 86px;
   text-align: center;
 }
 
@@ -82,9 +80,8 @@ a {
   width: 60px;
   height: 24px;
 
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
 
   padding-top: 8px;
 }
@@ -114,8 +111,8 @@ header .logo {
   font-family: "Playfair Display SC";
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 32px;
   padding: 20px 20px;
   text-decoration: none;
 }
@@ -123,8 +120,7 @@ header .logo {
 /* ----------------------------------------------------------Home Section */
 
 .section-home {
-  padding-top: 250px;
-  padding-bottom: 150px;
+  padding-top: 100px;
 }
 
 .section-home h1:after {
@@ -140,6 +136,10 @@ header .logo {
 
 .section-about {
   padding-top: 4rem;
+}
+
+.section-about .heading {
+  margin-bottom: 1rem;
 }
 
 .section-about h3 {
@@ -190,6 +190,11 @@ header .logo {
   border-bottom: 1px solid #1d1d1d;
 }
 
+.project-title span {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /* ----------------------------------------------------------Contact Section */
 
 #section-contact {
@@ -205,7 +210,7 @@ header .logo {
 .contact-form {
   background-image: url("../images/contact.jpg");
 
-  min-height: 380px;
+  min-height: 500px;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -218,18 +223,16 @@ header .logo {
 .form {
   display: flex;
   flex-flow: column;
-
+  justify-content: space-between;
   margin: 20px;
   width: 80%;
   padding: 25px;
   background-color: #ffffff;
-  height: 330px;
+  height: 400px;
 }
 
 .form h4 {
   font-family: "Roboto";
-  font-size: 18px;
-  line-height: 24px;
   margin-bottom: 1.75rem;
   display: flex;
   justify-content: center;
@@ -239,8 +242,8 @@ input[name="name"],
 input[name="email"],
 textarea[name="message"] {
   font-family: "Roboto";
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 24px;
   color: #1d1d1d;
 
   width: 90%;
@@ -270,16 +273,15 @@ input[name="password"]:focus textarea[name="message"]:focus {
 .btn {
   align-self: flex-end;
   margin-right: 1.5%;
-
   background-color: #eb486f;
   color: white;
   font-family: "Roboto";
-  line-height: 19px;
-
+  font-size: 18px;
+  line-height: 24px;
   border: 1px solid #1d1d1d;
   box-sizing: border-box;
   cursor: pointer;
-  width: 2.654rem;
+  width: 4rem;
 }
 
 .btn:hover {
@@ -310,13 +312,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   padding: 25px 20px 20px 20px;
   border-top: 1px solid #040404;
-  height: 60px;
+  height: 80px;
 }
 
 .list-item {
   font-family: "Roboto";
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 18px;
   margin-bottom: 8px;
 }
 
@@ -329,8 +331,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 .copyright a {
   font-family: "Roboto";
-  font-size: 8px;
-  line-height: 11px;
+  font-size: 12px;
+  line-height: 18px;
   color: #828282;
 }
 
@@ -340,13 +342,18 @@ input[name="password"]:focus textarea[name="message"]:focus {
   p {
     text-align: justify;
   }
+
+  #section-contact {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 950px) {
   header span {
     display: flex;
     width: 10%;
-    font-size: 18px;
+    font-size: 24px;
+    margin-right: 3%;
     align-items: center;
   }
 
@@ -437,7 +444,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-margin-t {
-    margin-top: 150px;
+    margin-top: 200px;
   }
 
   .section-home {
@@ -479,7 +486,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-top: 2rem;
     max-width: 70%;
     align-self: center;
-    max-height: 400px;
+    max-height: 600px;
   }
 
   .heading {
@@ -493,11 +500,11 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .section-projects .project {
     margin-bottom: 50px;
     padding: 0 0rem;
-    max-width: 40%;
+    max-width: 45%;
   }
 
   .projects {
-    height: 450px;
+    height: 600px;
   }
 
   .box > * {
@@ -527,10 +534,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .section-projects .project.p-2 {
     align-self: flex-end;
     padding: 4.8rem 0;
-  }
-
-  .section-projects .project.p-3 {
-    width: 40%;
   }
 
   .section-contact {
@@ -564,8 +567,18 @@ input[name="password"]:focus textarea[name="message"]:focus {
     padding: 25px 0 20px 0;
   }
 
+  .list-item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .copyright {
     padding: 20px 0;
+  }
+
+  .copyright a {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -608,13 +621,12 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 @media (min-width: 950px) {
   header {
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   header .logo {
-    width: 15%;
-    display: flex;
-    justify-content: center;
+    width: 25%;
+    margin-left: 5%;
     padding: 20px 0px 20px 0px;
   }
 
@@ -626,8 +638,12 @@ input[name="password"]:focus textarea[name="message"]:focus {
     visibility: hidden;
   }
 
-  header div {
-    width: 50%;
+  #myNav {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5%;
+    width: 75%;
+    justify-content: flex-end;
   }
 
   .overlay-content {
@@ -637,8 +653,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .overlay-content a {
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 24px;
+    line-height: 32px;
     text-decoration: none;
     padding: 8px 20px 8px 0px;
   }
@@ -662,8 +678,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-home {
-      padding-top: 500px;
-      padding-bottom: 300px;
+    padding-top: 500px;
+    padding-bottom: 300px;
   }
 
   .section-projects .project.p-0 {
@@ -701,13 +717,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
 }
 
 @media (min-width: 1100px) {
-.section-margin-t {
+  .section-margin-t {
     margin-top: 200px;
-}
+  }
 
-      .section-home {
-      padding-top: 300px;
-      padding-bottom: 200px;
+  .section-home {
+    padding-top: 300px;
+    padding-bottom: 200px;
   }
 
   .section-projects .project.p-0 {
