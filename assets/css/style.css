@@ -315,7 +315,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
   height: 80px;
 }
 
-.list-item {
+.list-item,
+.list-item p {
   font-family: "Roboto";
   font-size: 12px;
   line-height: 18px;
