@@ -550,12 +550,12 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .form {
     max-width: 450px;
-    height: 400px;
+    height: 450px;
     justify-content: space-between;
   }
 
   .btn {
-    margin-right: 2.3%;
+    margin-right: 3%;
   }
 
   footer {
@@ -600,10 +600,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-top: 2rem;
     max-width: 45%;
     align-self: flex-end;
-  }
-
-  .section-projects .project.p-0 {
-    margin-top: -20%;
   }
 
   .projects {
@@ -682,10 +678,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
     padding-bottom: 300px;
   }
 
-  .section-projects .project.p-0 {
-    margin-top: -5%;
-  }
-
   #section-contact {
     padding-top: 4rem;
   }
@@ -708,7 +700,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .form {
-    height: 400px;
+    height: 500px;
   }
 
   .form h4 {
@@ -726,10 +718,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
     padding-bottom: 200px;
   }
 
-  .section-projects .project.p-0 {
-    margin-top: -15%;
-  }
-
   .projects {
     height: 800px;
   }
@@ -737,21 +725,21 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 @media (min-width: 1400px) {
   .section-projects .project.p-0 {
-    margin-top: 0;
+    margin-top: 10%;
   }
 
   .overlay-content a {
     padding: 8px 60px 8px 0px;
+  }
+
+  .form {
+    max-width: 550px;
   }
 }
 
 @media (min-width: 1850px) {
   .projects {
     height: 1000px;
-  }
-
-  .form {
-    height: 500px;
   }
 }
 
