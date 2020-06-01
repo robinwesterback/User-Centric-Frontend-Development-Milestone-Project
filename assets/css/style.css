@@ -435,8 +435,21 @@ input[name="password"]:focus textarea[name="message"]:focus {
 }
 
 @media (min-width: 768px) {
+  header .logo {
+    margin-left: 0.6rem;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
   header span {
     justify-content: center;
+    font-size: 36px;
+    margin-right: 0.6rem;
+  }
+
+  .overlay a {
+    font-size: 64px;
+    line-height: 80px;
   }
 
   .container {
@@ -641,6 +654,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-right: 2.5%;
     width: 75%;
     justify-content: flex-end;
+    align-self: center;
   }
 
   .overlay-content {
