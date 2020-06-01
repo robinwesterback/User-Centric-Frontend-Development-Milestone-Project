@@ -52,6 +52,11 @@ a {
 
 /* ----------------------------------------------------------Classes */
 
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -339,6 +344,37 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 /*-----------------------------------------------------------Media Queries */
 
+@media (max-width: 330px) {
+  h1 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .overlay .closebtn {
+    margin-top: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .project-title span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .form h4 {
+    margin-bottom: 0;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .overlay .closebtn {
+    margin-top: 0.8rem;
+    margin-right: 0.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   p {
     text-align: justify;
@@ -356,6 +392,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
     font-size: 24px;
     margin-right: 3%;
     align-items: center;
+  }
+
+  header .logo {
+    margin-left: 1rem;
   }
 
   .overlay {
@@ -401,8 +441,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
     font-size: 30px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 0.4rem;
-    margin-right: 0.7rem;
+    margin-top: 0.8rem;
+    margin-right: 0.5rem;
   }
 
   #section-contact h3 {
@@ -415,6 +455,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -422,9 +463,31 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 }
 
+@media (min-width: 360px) {
+  .overlay .closebtn {
+    margin-right: 0.8rem;
+  }
+}
+
+@media (min-width: 410px) {
+  .overlay .closebtn {
+    margin-right: 1.2rem;
+  }
+
+  h1 {
+    font-size: 54px;
+    line-height: 72px;
+  }
+}
+
 @media (min-width: 450px) {
   .section-projects .project.p-0 {
     margin-top: 25%;
+  }
+
+  .overlay .closebtn {
+    margin-top: 0.4rem;
+    margin-right: 0.7rem;
   }
 }
 
@@ -452,6 +515,12 @@ input[name="password"]:focus textarea[name="message"]:focus {
     line-height: 80px;
   }
 
+  .overlay .closebtn {
+    font-size: 36px;
+    margin-top: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
   .container {
     padding-left: 15%;
     padding-right: 15%;
@@ -462,13 +531,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-home {
-    padding-top: 270px;
+    padding-top: 150px;
   }
 
   h1 {
     font-weight: bold;
-    font-size: 71px;
-    line-height: 95px;
+    font-size: 80px;
+    line-height: 100px;
   }
 
   .section-home h1:after {
@@ -486,8 +555,34 @@ input[name="password"]:focus textarea[name="message"]:focus {
     justify-content: space-between;
   }
 
+  .number {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .number:after {
+    content: "";
+    display: block;
+    margin-top: -0.2rem;
+    height: 1.5px;
+    width: 42px;
+    background: #1d1d1d;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
   p {
     text-align: start;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .about-me {
@@ -500,7 +595,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-top: 2rem;
     max-width: 70%;
     align-self: center;
-    max-height: 600px;
+    max-height: 400px;
   }
 
   .heading {
@@ -508,18 +603,20 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-projects .heading {
-    margin-bottom: 2.813rem;
+    margin-bottom: 4rem;
   }
 
   .section-projects .project {
     margin-bottom: 50px;
     padding: 0 0rem;
-    max-width: 45%;
+    /* max-width: 45%; */
   }
 
+  /* To next query 
   .projects {
     height: 600px;
-  }
+  } 
+  */
 
   .box > * {
     flex: 1 1 80px;
@@ -527,6 +624,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .projects :nth-child(1) {
     order: 1;
+    align-self: center;
+    width: 80%;
   }
 
   .projects :nth-child(2) {
@@ -534,11 +633,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .projects :nth-child(3) {
-    order: 2;
+    order: 3;
+    align-self: center;
+    width: 80%;
   }
 
   .section-projects .project.p-0 {
-    margin-top: 0;
+    margin-top: 2rem;
     align-self: flex-end;
 
     max-width: 100%;
@@ -546,8 +647,17 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-projects .project.p-2 {
-    align-self: flex-end;
-    padding: 4.8rem 0;
+    /*   align-self: flex-end;
+    padding: 4.8rem 0; */
+    align-self: center;
+    width: 70%;
+    padding: 2rem 0;
+  }
+
+  .project-title span {
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
   }
 
   .section-contact {
@@ -568,8 +678,27 @@ input[name="password"]:focus textarea[name="message"]:focus {
     justify-content: space-between;
   }
 
+  h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .form h4 {
+    margin-bottom: 0;
+  }
+
+  input[name="name"],
+  input[name="email"],
+  textarea[name="message"] {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .btn {
     margin-right: 3%;
+    font-size: 24px;
+    line-height: 32px;
+    width: 5rem;
   }
 
   footer {
@@ -579,20 +708,21 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .footer {
     padding: 25px 0 20px 0;
+    height: 100px;
   }
 
   .list-item {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .copyright {
-    padding: 20px 0;
+    padding: 30px 0;
   }
 
   .copyright a {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -617,7 +747,34 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .projects {
-    height: 600px;
+    height: 700px;
+  }
+
+  .section-projects .project {
+    max-width: 45%;
+  }
+
+  .projects :nth-child(1) {
+    align-self: flex-start;
+  }
+
+  .projects :nth-child(2) {
+    order: 3;
+  }
+
+  .projects :nth-child(3) {
+    order: 2;
+  }
+
+  .section-projects .project.p-2 {
+    align-self: flex-end;
+    padding: 4.8rem 0;
+  }
+
+  .project-title span {
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
   }
 
   .section-contact {
@@ -635,9 +792,15 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   header .logo {
-    width: 25%;
-    margin-left: 5%;
-    padding: 20px 0px 20px 0px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    padding: 0px;
+
+    font-size: 32px;
+    line-height: 40px;
   }
 
   header span {
@@ -664,8 +827,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .overlay-content a {
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 32px;
+    line-height: 40px;
     text-decoration: none;
     padding: 8px 20px 8px 0px;
   }
@@ -702,7 +865,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-contact h3 {
-    width: 30%;
+    width: 50%;
     margin-bottom: 1.75rem;
   }
 
