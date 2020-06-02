@@ -914,6 +914,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .form {
     max-width: 550px;
   }
+
+  header .logo {
+    margin-left: 2rem;
+  }
 }
 
 @media (min-width: 1850px) {
