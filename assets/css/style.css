@@ -383,6 +383,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
   #section-contact {
     margin-top: 0;
   }
+
+  #contact-footer {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 950px) {
@@ -599,6 +603,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .heading {
+    padding-top: 3rem;
     margin-bottom: 0.625rem;
   }
 
@@ -609,14 +614,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .section-projects .project {
     margin-bottom: 50px;
     padding: 0 0rem;
-    /* max-width: 45%; */
   }
-
-  /* To next query 
-  .projects {
-    height: 600px;
-  } 
-  */
 
   .box > * {
     flex: 1 1 80px;
@@ -647,8 +645,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-projects .project.p-2 {
-    /*   align-self: flex-end;
-    padding: 4.8rem 0; */
     align-self: center;
     width: 70%;
     padding: 2rem 0;
@@ -764,6 +760,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .projects :nth-child(3) {
     order: 2;
+    align-self: flex-start;
   }
 
   .section-projects .project.p-2 {
@@ -898,6 +895,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .projects {
     height: 800px;
+  }
+
+  .section-contact .heading {
+    padding-top: 3rem;
   }
 }
 
