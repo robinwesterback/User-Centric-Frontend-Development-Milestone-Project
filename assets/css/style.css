@@ -280,6 +280,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   margin-right: 1.5%;
   background-color: #eb486f;
   color: white;
+      text-align: center;
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
