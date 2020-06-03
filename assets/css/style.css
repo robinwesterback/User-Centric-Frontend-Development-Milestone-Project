@@ -455,6 +455,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-right: 0.5rem;
   }
 
+  .section-about h3 {
+    max-width: 100%;
+}
+
   #section-contact h3 {
     order: -1;
     visibility: hidden;
@@ -615,9 +619,9 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .about-img {
     margin-top: 2rem;
-    max-width: 70%;
+    max-width: 100%;
     align-self: center;
-    max-height: 400px;
+    max-height: 450px; 
   }
 
   .heading {
@@ -743,57 +747,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
 /*-----------------------------------------------------------Min-width 800px */
 
 @media (min-width: 800px) {
-  .section-about {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-content: flex-start;
-  }
-
-  .about-me {
-    max-width: 45%;
-    max-height: 40%;
-    align-self: flex-end;
-  }
-
-  .about-img {
-    margin-top: 2rem;
-    max-width: 45%;
-    align-self: flex-end;
-  }
-
-  .projects {
-    height: 700px;
-  }
-
-  .section-projects .project {
-    max-width: 45%;
-  }
-
-  .projects :nth-child(1) {
-    align-self: flex-start;
-  }
-
-  .projects :nth-child(2) {
-    order: 3;
-  }
-
-  .projects :nth-child(3) {
-    order: 2;
-    align-self: flex-start;
-  }
-
-  .section-projects .project.p-2 {
-    align-self: flex-end;
-    padding: 4.8rem 0;
-  }
-
-  .project-title span {
-    font-size: 24px;
-    line-height: 32px;
-    width: 50%;
-  }
-
   .section-contact {
     width: 70%;
 
@@ -917,8 +870,40 @@ input[name="password"]:focus textarea[name="message"]:focus {
     padding-bottom: 200px;
   }
 
+  .about-img {
+    max-height: 600px;
+}
+
   .projects {
     height: 800px;
+  }
+
+  .section-projects .project {
+    max-width: 45%;
+  }
+
+  .projects :nth-child(1) {
+    align-self: flex-start;
+  }
+
+  .projects :nth-child(2) {
+    order: 3;
+  }
+
+  .projects :nth-child(3) {
+    order: 2;
+    align-self: flex-start;
+  }
+
+  .section-projects .project.p-2 {
+    align-self: flex-end;
+    padding: 4.8rem 0;
+  }
+
+  .project-title span {
+    font-size: 24px;
+    line-height: 32px;
+    width: 50%;
   }
 
   .section-contact .heading {
@@ -931,6 +916,26 @@ input[name="password"]:focus textarea[name="message"]:focus {
 @media (min-width: 1400px) {
       .section-home {
     padding-top: 300px;
+  }
+
+    .section-about {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  .about-me {
+    max-width: 45%;
+    max-height: 40%;
+    align-self: flex-end;
+  }
+
+  .about-img {
+    margin-top: 2rem;
+    max-width: 45%;
+    align-self: flex-end;
+    filter: grayscale(100%);
   }
 
   .section-projects .project.p-0 {
