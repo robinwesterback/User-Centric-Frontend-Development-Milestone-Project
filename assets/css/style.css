@@ -401,12 +401,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     display: flex;
     width: 10%;
     font-size: 24px;
-    margin-right: 3%;
     align-items: center;
-  }
-
-  header .logo {
-    margin-left: 1rem;
   }
 
   .overlay {
