@@ -396,7 +396,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     visibility: hidden;
   }
 
-  #contact-footer li a {
+  #contact-footer li p {
     font-size: 8px;
   }
 }
