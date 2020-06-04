@@ -318,14 +318,14 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   padding: 25px 20px 20px 20px;
   border-top: 1px solid #040404;
-  height: 80px;
+  height: 100px;
 }
 
 .list-item,
 .list-item p {
   font-family: "Roboto";
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   margin-bottom: 8px;
 }
 
@@ -338,8 +338,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 .copyright a {
   font-family: "Roboto";
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 24px;
   color: #828282;
 }
 
@@ -391,6 +391,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   #contact-footer {
     visibility: hidden;
+  }
+
+    #contact-footer li a {
+       font-size: 8px;
   }
 }
 
@@ -722,21 +726,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .footer {
     padding: 25px 0 20px 0;
-    height: 100px;
-  }
-
-  .list-item {
-    font-size: 18px;
-    line-height: 24px;
   }
 
   .copyright {
     padding: 30px 0;
-  }
-
-  .copyright a {
-    font-size: 18px;
-    line-height: 24px;
   }
 }
 
@@ -905,6 +898,20 @@ input[name="password"]:focus textarea[name="message"]:focus {
   .section-contact .heading {
     padding-top: 3rem;
   }
+
+  .footer {
+    height: 120px;
+}
+
+  .list-item, .list-item p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+  .copyright a {
+    font-size: 24px;
+    line-height: 32px;
+}
 }
 
 /*-----------------------------------------------------------Min-width 1400px */
