@@ -321,12 +321,15 @@ input[name="password"]:focus textarea[name="message"]:focus {
   height: 100px;
 }
 
+.list-item {
+    margin-bottom: 8px;
+}
+
 .list-item a,
 .list-item p {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 8px;
   text-decoration: none;
 }
 
@@ -967,7 +970,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 @media (min-width: 1850px) {
   .section-home {
-    padding-top: 400px;
+    padding-top: 330px;
   }
 
   .projects {
