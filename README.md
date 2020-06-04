@@ -1,12 +1,12 @@
 # Robin Westerback Full Stack Web Developer
 User Centric Frontend Development Milestone Project @ Code Institute
 
-This project will function as my portfolio website to show for potential clients/employers. It provides information about me and what I can offer. 
+This project will function as my portfolio website to show potential clients/employers. It provides information about me and what I can offer. 
 The website showcases 4 projects, provides social links (GitHub and LinkedIn), my resumé and contact information. You can find the website [here](https://robinwesterback.github.io/User-Centric-Frontend-Development-Milestone-Project/).
 
 ## UX
-The website is designed to be easy to use, simple and clean with the purpose to present all information in a visually appealing manner on all devices.
-It is made for potential clients/employers who’s looking for talent like me. They want to know  who I am, what I can offer, what I have done and how to contact me.
+The website is designed to be user friendly, simple and clean with the purpose to present all information in a visually appealing manner on all devices.
+It is made for potential clients/employers who are looking for talent like me. They want to know  who I am, what I can offer, what I have done and how to contact me.
 To provide that information this website is a simple and straightforward one-pager with 4 major sections - Home, About, Projects and Contact.
 The footer at the end of the page contains links for social links and a resume. 
 
@@ -34,7 +34,10 @@ The website contains several features with a few left to be implemented.
 ### Existing Features
 
 #### Full screen Overlay Navigation from w3schools on mobile and iPad
-I used the information from [w3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp "How To JS Fullscreen Overlay") to create a full screen overlay navigation with a blur. I use the background-filter: blur element which doesn’t get validated by the jigsaw CSS validator. I have made the background opacity 0.9 to make the background less visible on devices that doesn’t support the blur-filter. The color of the logo also changes when you open/close the overlay navigation.
+I used the information from [w3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp "How To JS Fullscreen Overlay") to create a full screen overlay navigation with a blur. 
+I use the background-filter: blur element which doesn’t get validated by the jigsaw CSS validator. 
+I have made the background opacity 0.9 to make the background less visible on devices that don’t support the blur-filter. 
+The color of the logo also changes when you open/close the overlay navigation.
 
 #### Styling span while hovering over the header menu on desktop
 I’ve added a styling span while hovering over the header menu on desktop so the border bottom wouldn’t have full width.
@@ -52,13 +55,13 @@ I provide several links on the website for navigation and resources (social link
 I want to add modals for each project with a project title, description with links and an image/video.
 
 #### Separate pages
-When my portfolio with projects is big enough I want to create separate about and projects pages to fill the website with more relevant information.
+When my portfolio with projects is big enough I want to create separate about- and projects pages to fill the website with more relevant content.
 
 #### 404 error
 I want to customize the 404 error webpage
 
 #### Livechat
-It’s possible that I add a live-chat or integrate one from Pipedrive to provide additional ways of communicating with me.
+I might want to add a live-chat or integrate one from Pipedrive to provide additional ways of communicating with me.
 
 #### Form validation
 I need to add a database to record emails and form validation for the form to function properly.
@@ -68,7 +71,7 @@ I want to add smooth scrolling and arrows to scroll to the next section for a be
 
 #### Feature showcasing skills
 I’m thinking of adding a feature showcasing my skills. For example an icon of HTML or CSS that drops down some interesting information about the skill/me when clicking on it.
-It’s a nice and interactive way to provide the information they are interested in.
+It’s a nice and interactive way to provide the information the user is interested in.
 
 #### Your thoughts
 Are there any features that you would like me to implement to improve the website? Please get in touch and share your thoughts.
