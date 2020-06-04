@@ -2,7 +2,7 @@
 User Centric Frontend Development Milestone Project @ Code Institute
 
 This project will function as my portfolio website to show for potential clients/employers. It provides information about me and what I can offer. 
-The website showcases 4 projects, provides social links (GitHub and LinkedIn), my resumé and contact information. 
+The website showcases 4 projects, provides social links (GitHub and LinkedIn), my resumé and contact information. You can find the website [here](https://robinwesterback.github.io/User-Centric-Frontend-Development-Milestone-Project/).
 
 ## UX
 The website is designed to be easy to use, simple and clean with the purpose to present all information in a visually appealing manner on all devices.
@@ -11,6 +11,8 @@ To provide that information this website is a simple and straightforward one-pag
 The footer at the end of the page contains links for social links and a resume. 
 
 ### User Stories
+The user stories are showing pictures from the mockups and not the actual project. 
+You can access the actual project [here](https://robinwesterback.github.io/User-Centric-Frontend-Development-Milestone-Project/) to try the user stories yourself.
 As a potential client/employer, I want to know who you are and what you can offer to get an idea if you have what I seek. 
 
 
