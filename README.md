@@ -1,102 +1,142 @@
-Project Name/Title: Robin Westerback Full Stack Web Developer
-Project Description: User Centric Frontend Development Milestone Project
-My portfolio website to promote me and showcase my work to potential clients/employers. The website is a one-pager with a clean and minimalistic design to lead the user on a journey that ends with the possibility to contact me.
-It features an about, projects and contact section as well as images, videos, modals, diagrams, a contact form as well as social links. The page is designed to give the client/employer easy access to relevant information needed before hiring me.  
+# Robin Westerback Full Stack Web Developer
+User Centric Frontend Development Milestone Project @ Code Institute
 
-Link to the project: You can access the website here.
+This project will function as my portfolio website to show for potential clients/employers. It provides information about me and what I can offer. 
+The website showcases 4 projects, provides social links (GitHub and LinkedIn), my resumé and contact information. 
 
-UX
-Ideal customer
-Customer stories
-Wireframe mockups
+## UX
+The website is designed to be easy to use, simple and clean with the purpose to present all information in a visually appealing manner on all devices.
+It is made for potential clients/employers who’s looking for talent like me. They want to know  who I am, what I can offer, what I have done and how to contact me.
+To provide that information this website is a simple and straightforward one-pager with 4 major sections - Home, About, Projects and Contact.
+The footer at the end of the page contains links for social links and a resume. 
 
-Strategy
+### User Stories
+As a potential client/employer, I want to know who you are and what you can offer to get an idea if you have what I seek. 
+![alt text](mockups/home.png "Home Section") ![alt text](mockups/about.png "About Section")
 
-Scope
+Then I want to know what you have done in the past to back that up and qualify that I should contact you.
+![alt text](mockups/projects-page1.png "Projects Section 1") ![alt text](mockups/projects-page2.png "Projects Section 2")
 
-Structure
+I want to be able to contact you and send a request to get in touch. I want to be able to find social links, 
+a resume and navigate easily on the website in case I want to go back to another section. 
+![alt text](mockups/contact.png "Contact Section") ![alt text](mockups/menu.png "Full Screen Overlay Menu")
 
-Skeleton
+## Features
+The website contains several features with a few left to be implemented.
 
-Surface
+### Existing Features
 
-Technologies
+#### Full screen Overlay Navigation from w3schools on mobile and iPad
+I used the information from [w3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp "How To JS Fullscreen Overlay") to create a full screen overlay navigation with a blur. I use the background-filter: blur element which doesn’t get validated by the jigsaw CSS validator. I have made the background opacity 0.9 to make the background less visible on devices that doesn’t support the blur-filter. The color of the logo also changes when you open/close the overlay navigation.
 
-Features
+#### Styling span while hovering over the header menu on desktop
+I’ve added a styling span while hovering over the header menu on desktop so the border bottom wouldn’t have full width.
 
-Testing
+#### Contact form with background image from w3schools
+I used the information from [w3schools](https://www.w3schools.com/howto/howto_css_form_on_image.asp "How To CSS Form on Image") to create a form with a background image. 
+I still have to implement form validation.
 
-Deployment
+#### Links
+I provide several links on the website for navigation and resources (social links and resumé) in the header and footer.
 
-Credits
-Header - w3schools.com, https://medium.com/creative-technology-concepts-code/responsive-mobile-dropdown-navigation-using-css-only-7218e4498a99
+### Features Left to Implement
 
-Content
-Media
-Acknowledgements
+#### Project Modals
+I want to add modals for each project with a project title, description with links and an image/video.
 
-Your Project's Name
-One or two paragraphs providing an overview of your project.
+#### Separate pages
+When my portfolio with projects is big enough I want to create separate about and projects pages to fill the website with more relevant information.
 
-Essentially, this part is your sales pitch.
+#### 404 error
+I want to customize the 404 error webpage
 
-UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+#### Additional languages
+As I am swedish it’s possible that I add a swedish version of the page
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+#### Livechat
+It’s possible that I add a live-chat or integrate one from Pipedrive to provide additional ways of communicating with me.
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+#### Form validation
+I need to add a database to record emails and form validation for the form to function properly.
 
-Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+#### Smooth scrolling
+I want to add smooth scrolling and arrows to scroll to the next section for a better user experience.
 
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+#### Feature showcasing skills
+I’m thinking of adding a feature showcasing my skills. For example an icon of HTML or CSS that drops down some interesting information about the skill/me when clicking on it.
+It’s a nice and interactive way to provide the information they are interested in.
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+#### Your thoughts
+Are there any features that you would like me to implement to improve the website? Please get in touch and share your thoughts.
 
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+## Technologies Used
+I used HTML, CSS and Javascript in this project. I tried to stay away from frameworks like bootstrap and JQuery for page speed optimization.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### HTML
+This project uses semantic [HTML](https://html.com/) to improve SEO and user friendliness. The HTML is separated using comments.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+### CSS
+The project uses responsive design to improve the user experience and availability on all devices. The [CSS](https://www.w3.org/Style/CSS/Overview.en.html) is separated using comments. 
+I have a [reset stylesheet](https://cssreset.com/scripts/eric-meyer-reset-css/) to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on. 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+### JS
+I used [JavaScript](https://www.javascript.com/) to get my full overlay feature to work. I’m looking forward to implement more JavaScript in future releases of the project.
 
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+## Testing
+I have tested the website and looked for flaws in the design and errors in the functionality on several browsers and devices. 
+I have also tested the user stories to see if the website fills its purpose towards the user. 
+The expected outcome is that the design is responsive and functional on all browsers/devices. 
+Functions like links, overlay menu and contact form should work properly e.g "target=”blank"" where appropriate. Below are my findings and comments.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+### Different Browsers and devices
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+#### Desktop
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+##### Internet Explorer 
+The header has no background when scrolling
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+##### Mozilla Firefox
+"background-filter: blur" doesn’t work
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+#### Mobile
 
-Credits
-Content
-The text for section Y was copied from the Wikipedia article Z
-Media
-The photos used in this site were obtained from ...
-Acknowledgements
-I received inspiration for this project from X
+##### iPhone 7 (Safari & Chrome)
+"background-filter: blur" doesn’t work 
+The btn text is a little out of place. Added "text-align: center;" to the btn.class but it didn’t solve the problem.
+The link to my LinkedIn-profile doesn’t seem to work. I suspect that the link needs to be different for iPhone 7.
+
+### Header
+The hover function on the header menu on desktop doesn’t work properly. The menu moves when it only should reveal a span.
+
+### Contact form
+All fields are required and work accordingly. When you send you go to a 404 page. Need to setup form validation and style 404 page.
+
+### User stories
+The client/employer is provided the information that they seek. They get information about me, what I do, my experience and a picture of me in the about section. 
+They get an overview of some of my projects that I have worked on with a link in the image to the website that is related to the project. 
+In the contact section they can contact me, take a look at and download my resume as well as checking in my LinkedIn-profile and GitHub-pages. 
+In case I want to quickly navigate to different parts of the website there are navigation links in the footer and overlay hamburger menu.
+
+### Conclusion
+After all the testing my overall conclusion is that the website is working as intended. 
+The minor flaws that exist doesn’t ruin the user experience but should be corrected in the future.
+
+## Deployment
+The project is hosted with GitHub pages and deployed from the master branch. When you commit new code to the master branch the website will update automatically. 
+To run the project locally, you can clone the repository into your editor by pasting 
+"git clone https://github.com/robinwesterback/User-Centric-Frontend-Development-Milestone-Project.git" into your terminal.
+
+## Credits
+
+### Content
+All content on the website was written by me.
+
+### Media
+The photos used for this project were delivered by https://www.megapixelab.se/ and https://unsplash.com/.
+
+### Acknowledgements
+The Full Screen Overlay Menu was modified using tips from [w3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp)
+
+The Contact Form with a background image was modified using tips from [w3schools](https://www.w3schools.com/howto/howto_css_form_on_image.asp)
+
+Eric Meyers Reset can be found [here](https://cssreset.com/scripts/eric-meyer-reset-css/)
