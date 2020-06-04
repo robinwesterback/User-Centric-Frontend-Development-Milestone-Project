@@ -17,8 +17,7 @@ As a potential client/employer, I want to know who you are and what you can offe
 Then I want to know what you have done in the past to back that up and qualify that I should contact you.
 ![alt text](mockups/projects-page1.png "Projects Section 1") ![alt text](mockups/projects-page2.png "Projects Section 2")
 
-I want to be able to contact you and send a request to get in touch. I want to be able to find social links, 
-a resume and navigate easily on the website in case I want to go back to another section. 
+I want to be able to contact you and send a request to get in touch. I want to be able to find social links, a resume and navigate easily on the website in case I want to go back to another section. 
 ![alt text](mockups/contact.png "Contact Section") ![alt text](mockups/menu.png "Full Screen Overlay Menu")
 
 ## Features
