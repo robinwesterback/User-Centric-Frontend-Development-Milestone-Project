@@ -44,7 +44,7 @@ I used the information from [w3schools](https://www.w3schools.com/howto/howto_cs
 I still have to implement form validation.
 
 #### Links
-I provide several links on the website for navigation and resources (social links and resumé) in the header and footer.
+I provide several links on the website for navigation and resources (social links and resume) in the header and footer.
 
 ### Features Left to Implement
 
@@ -56,9 +56,6 @@ When my portfolio with projects is big enough I want to create separate about an
 
 #### 404 error
 I want to customize the 404 error webpage
-
-#### Additional languages
-As I am swedish it’s possible that I add a swedish version of the page
 
 #### Livechat
 It’s possible that I add a live-chat or integrate one from Pipedrive to provide additional ways of communicating with me.

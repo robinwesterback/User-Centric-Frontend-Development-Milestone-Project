@@ -280,7 +280,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   margin-right: 1.5%;
   background-color: #eb486f;
   color: white;
-      text-align: center;
+  text-align: center;
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
@@ -321,12 +321,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
   height: 100px;
 }
 
-.list-item,
+.list-item a,
 .list-item p {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .copyright {
@@ -336,11 +337,13 @@ input[name="password"]:focus textarea[name="message"]:focus {
   padding: 20px;
 }
 
-.copyright a {
+.copyright a,
+.copyright p {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
   color: #828282;
+  text-decoration: none;
 }
 
 /*-----------------------------------------------------------Media Queries */
@@ -393,8 +396,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
     visibility: hidden;
   }
 
-    #contact-footer li a {
-       font-size: 8px;
+  #contact-footer li a {
+    font-size: 8px;
   }
 }
 
@@ -457,7 +460,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .section-about h3 {
     max-width: 100%;
-}
+  }
 
   #section-contact h3 {
     order: -1;
@@ -621,7 +624,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-top: 2rem;
     max-width: 100%;
     align-self: center;
-    max-height: 450px; 
+    max-height: 450px;
   }
 
   .heading {
@@ -861,7 +864,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .about-img {
     max-height: 600px;
-}
+  }
 
   .projects {
     height: 800px;
@@ -901,27 +904,29 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .footer {
     height: 120px;
-}
+  }
 
-  .list-item, .list-item p {
+  .list-item a,
+  .list-item p {
     font-size: 24px;
     line-height: 32px;
-}
+  }
 
-  .copyright a {
+  .copyright a,
+  .copyright p {
     font-size: 24px;
     line-height: 32px;
-}
+  }
 }
 
 /*-----------------------------------------------------------Min-width 1400px */
 
 @media (min-width: 1400px) {
-      .section-home {
+  .section-home {
     padding-top: 300px;
   }
 
-    .section-about {
+  .section-about {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -961,7 +966,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
 /*-----------------------------------------------------------Min-width 1850px */
 
 @media (min-width: 1850px) {
-    @media (min-width: 1400px) {
+  .section-home {
+    padding-top: 400px;
+  }
+
   .projects {
     height: 1000px;
   }
