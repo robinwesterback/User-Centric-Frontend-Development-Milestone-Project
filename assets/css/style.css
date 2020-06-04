@@ -181,7 +181,8 @@ header .logo {
   padding: 0 3rem;
 }
 
-.section-projects .project img {
+.section-projects .project img,
+.section-projects .project iframe {
   max-width: 100%;
   width: 100%;
 }
