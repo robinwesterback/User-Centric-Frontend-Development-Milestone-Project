@@ -744,7 +744,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
 @media (min-width: 800px) {
   .section-contact {
-    width: 70%;
+    width: 84%;
 
     display: flex;
     flex-flow: column;
