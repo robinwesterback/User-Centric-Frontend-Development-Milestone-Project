@@ -323,7 +323,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 }
 
 .list-item {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .list-item a,
@@ -804,7 +804,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     padding: 8px 20px 8px 0px;
   }
 
-   .overlay-content a::after {
+  .overlay-content a::after {
     content: "";
     display: block;
     margin-top: 0.6rem;
@@ -863,7 +863,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
 /*-----------------------------------------------------------Min-width 1100px */
 
 @media (min-width: 1100px) {
-    .container {
+  .container {
     padding-left: 15%;
     padding-right: 15%;
   }
@@ -915,14 +915,14 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .section-contact {
     padding: 0 15%;
+    width: 70%;
   }
-
 
   .section-contact .heading {
     padding-top: 3rem;
   }
 
- footer {
+  footer {
     padding: 0 15%;
   }
 
@@ -968,6 +968,10 @@ input[name="password"]:focus textarea[name="message"]:focus {
     max-width: 45%;
     align-self: flex-end;
     filter: grayscale(100%);
+  }
+
+  .projects {
+    height: 900px;
   }
 
   .section-projects .project.p-0 {
