@@ -28,6 +28,27 @@ I want to be able to contact you and send a request to get in touch. I want to b
 
 ![alt text](mockups/contact.png "Contact Section") ![alt text](mockups/menu.png "Full Screen Overlay Menu")
 
+### Strategy
+The goal with the website is to provide quick and accessable information while still being visaully appealing. 
+The foundation of the website should be good with room for improvement for future updates/releases.
+
+### Scope
+I want to give give the users the information they are looking for when searching for talent. 
+At this stage the user can access all information they need while there is still improvements to be made. 
+Further on you can improve the website and the access to information by e.g. implementing modals in the projects section.
+
+### Structure
+The website has a natural structure with the "home-section" giving a message, in this case the message is that you want someone that can solve problems. 
+The next section is the "about-section", describing what problems I can solve while giving a hint of what they can expect. 
+From there you dive deeper and get to the "projects-section" showing of some projects I have worked on (placeholders at the moment, modals in the future).
+Last but not least, you get to the "contact-section" where you can access social-links, a resume and contact-info.
+
+### Skeleton
+In this [link](https://github.com/robinwesterback/User-Centric-Frontend-Development-Milestone-Project/tree/master/wireframes) you can find the wireframes for each section that serves as the skeleton for the project.
+
+### Surface
+The "black n grey" design is clean and works well to make images/videos and CTAs pop a bit. The "styling" spans give a nice touch rather than having borders. I'm also a big fan of the font-families used.
+
 ## Features
 The website contains several features with a few left to be implemented.
 
@@ -133,14 +154,44 @@ Functions like links, overlay menu and contact form should work properly e.g "ta
 | Google Chrome | The website works appropriately | No | "background-filter: blur" doesn't work |
 | Safari | The website works appropriately | No | "background-filter: blur" doesn't work |
 
+### Responsiveness
+
+I have tested the responsiveness of the website [here](http://ami.responsivedesign.is/#) and it is responsive.
+
+![alt text](assets/images/responsive.jpg "Responsiveness")
+
+### Code validation
+
+#### CSS
+I validated my CSS with the [Jigsaw W3C Validation Service](https://jigsaw.w3.org/css-validator/). I got one error regarding the "backdrop-filter: blur" element in the ".overlay" class.
+I found this [information](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter) regarding the issue. It is an element in development and thereof not compatible with all browsers to this date.
+I put the opacity to 0.9 for the users using non-compatible browsers to not get affected by the element not working.
+
+#### HTML
+I validated my HTML with the [W3C Markup Validation Service](https://validator.w3.org/) with no errors or warnings to show.
+
+### Defensive design
+When users try to send the form without filling in the input- and text fields warning messages pop-up in the required fields.
+
 ### Conclusion
 After testing the deployed website my overall conclusion is that the website is working as intended. 
 The minor flaws that exist don’t ruin the user experience but should be corrected in the future.
 
 ## Deployment
-The project is hosted with GitHub pages and deployed from the master branch. When you commit new code to the master branch the website will update automatically. 
-To run the project locally, you can clone the repository into your editor by pasting 
-"git clone https://github.com/robinwesterback/User-Centric-Frontend-Development-Milestone-Project.git" into your terminal.
+
+1. Use this [link](https://github.com/robinwesterback/User-Centric-Frontend-Development-Milestone-Project) to get to the projects repository.
+
+2. Click "Clone or Download".
+
+3. Click the "copy" icon.
+
+4. Open Git Bash in your local IDE.
+
+5. Change your current working directory to where you want the cloned directory to be made.
+
+6. Type "git clone" and then paste the URL you copied earlier.
+
+7. When you press enter your local clone will be ready.
 
 ## Credits
 
