@@ -44,6 +44,7 @@ p {
   font-family: "Roboto";
   font-size: 18px;
   line-height: 24px;
+  text-align: justify;
 }
 
 a {
@@ -388,10 +389,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
 /*-----------------------------------------------------------Max-width 768px */
 
 @media (max-width: 768px) {
-  p {
-    text-align: justify;
-  }
-
   #section-contact {
     margin-top: 0;
   }
@@ -448,8 +445,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
     transition: 0.3s;
   }
 
-  .overlay-content a:hover,
-  .overlay-content a:active {
+  .overlay-content a:hover {
     color: #1d1d1d;
     text-decoration: underline;
   }
@@ -613,7 +609,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   p {
-    text-align: start;
     font-size: 24px;
     line-height: 32px;
   }
@@ -816,15 +811,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
     background: #1d1d1d;
   }
 
-  .overlay-content a:active::after {
-    content: "";
-    display: block;
-    margin-top: 0.6rem;
-    height: 2px;
-    width: 31px;
-    background: #1d1d1d;
-  }
-
   .section-home {
     padding-top: 500px;
     padding-bottom: 300px;
@@ -967,7 +953,6 @@ input[name="password"]:focus textarea[name="message"]:focus {
     margin-top: 2rem;
     max-width: 45%;
     align-self: flex-end;
-    filter: grayscale(100%);
   }
 
   .projects {
