@@ -178,12 +178,21 @@ header .logo {
   padding: 0;
 }
 
+.section-projects .project.p-0 iframe {
+    height: 600px;
+}
+
 .section-projects .project.p-2 {
   padding: 0 3rem;
 }
 
-.section-projects .project img,
+.section-projects .project img {
+  max-width: 100%;
+  width: 100%;
+}
+
 .section-projects .project iframe {
+  height: 250px;
   max-width: 100%;
   width: 100%;
 }
