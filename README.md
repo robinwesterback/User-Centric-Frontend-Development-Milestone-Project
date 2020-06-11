@@ -90,39 +90,48 @@ I have a [reset stylesheet](https://cssreset.com/scripts/eric-meyer-reset-css/) 
 I used [JavaScript](https://www.javascript.com/) to get my full overlay feature to work. I’m looking forward to implement more JavaScript in future releases of the project.
 
 ## Testing
-I have tested the website and looked for flaws in the design and errors in the functionality on several browsers and devices. 
+I have tested the website and looked for flaws in the design and errors in the functionality on several browsers on desktop, laptop and iPhone 7.
 I have also tested the user stories to see if the website fills its purpose towards the user. 
 The expected outcome is that the design is responsive and functional on all browsers/devices. 
-Functions like links, overlay menu and contact form should work properly e.g "target=”blank"" where appropriate. Below are my findings and comments.
+Functions like links, overlay menu and contact form should work properly e.g "target=”_blank"" where appropriate. Below are my findings and comments.
+
+### Functionality
+
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Click anywhere in the home-section | Links should work | Yes | - |
+| Click anywhere in the about-section | Links should work | Yes | - |
+| Click anywhere in the projects-section | Links should work | Yes | - |
+| Click anywhere in the contact-section | Links should work, input- and text fields should require text/e-mail. | Yes | Form validation isn't implemented, clicking the "send" button should direct you to 404. |
+
+### User Stories
+
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Find information about me and what I offer | Go to the about-section and read | Yes | - |
+| Find previous work | Go to the projects-section and click the project | Yes | The projects are temporary and will be updated in the future as I get projects to showcase |
+| Find contact info | Go to the contact-section and find e-mail or use form | Yes | Form validation doesn't function but will be implemented in the future |
+| Find social links and resume | Click the social links in the footer | Yes | - |
+| Navigate the website easily | Click the navigation links to get directed to the desired section | Yes | - |
+
 
 ### Different Browsers and devices
 
 #### Desktop
 
-##### Internet Explorer 
-The header has no background when scrolling
-
-##### Mozilla Firefox
-"background-filter: blur" doesn’t work
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Internet Explorer | The website works appropriately | No | The header has a transparent background |
+| Google Chrome | The website works appropriately | Yes | - |
+| Mozilla Firefox | The website works appropriately | No | "background-filter: blur" doesn't work |
+| Safari | The website works appropriately | Yes | - |
 
 #### Mobile
 
-##### iPhone 7 (Safari & Chrome)
-"background-filter: blur" doesn’t work 
-The btn text is a little out of place. I added "text-align: center;" to the class ".btn" but it didn’t solve the problem.
-The link to my LinkedIn-profile doesn’t seem to work. I suspect that the link needs to be different for iPhone 7.
-
-### Header
-The hover function on the header menu on desktop doesn’t work properly. The menu moves when it only should reveal a span.
-
-### Contact form
-All fields are required and work accordingly. When you click "send" you get directed to a 404 page. I need to setup form validation and style 404 page.
-
-### User stories
-The client/employer is provided the information that they seek. They get information about me, what I do, my experience and a picture of me in the about section. 
-They get an overview of some of my projects that I have worked on with a link in the image to the website that is related to the project. 
-In the contact section they can contact me, take a look at and download my resume as well as checking in my LinkedIn-profile and GitHub-pages. 
-In case I want to quickly navigate to different parts of the website there are navigation links in the footer and overlay hamburger menu.
+| Description   | Expected outcome | Pass | Comments |
+| ------------- |:----------------:| ----:| --------:|
+| Google Chrome | The website works appropriately | No | "background-filter: blur" doesn't work |
+| Safari | The website works appropriately | No | "background-filter: blur" doesn't work |
 
 ### Conclusion
 After testing the deployed website my overall conclusion is that the website is working as intended. 
