@@ -179,7 +179,7 @@ header .logo {
 }
 
 .section-projects .project.p-0 iframe {
-    height: 600px;
+  height: 600px;
 }
 
 .section-projects .project.p-2 {
@@ -599,12 +599,8 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .number:after {
-    content: "";
-    display: block;
-    margin-top: -0.2rem;
     height: 1.5px;
     width: 42px;
-    background: #1d1d1d;
   }
 
   .title {
@@ -695,6 +691,11 @@ input[name="password"]:focus textarea[name="message"]:focus {
 
   .section-contact .heading {
     padding: 0;
+  }
+
+  .section-contact .heading .number:after {
+    height: 2px;
+    width: 42px;
   }
 
   .contact-form {
@@ -830,7 +831,7 @@ input[name="password"]:focus textarea[name="message"]:focus {
   }
 
   .section-contact .heading {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   .section-contact h3 {
